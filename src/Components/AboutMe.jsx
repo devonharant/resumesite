@@ -17,9 +17,9 @@ export default function AboutMe() {
                 </AccordionSummary>
                 <AccordionDetails style={{width: '95%'}}>
                     <Box display="flex" flexDirection="row" justifyContent="space-between" flexWrap='wrap'>
-                        <img src={gamecock} alt="cocky" style={{height: 75}}/>
-                        <img src={header} alt="head" style={{height: 75}}/>
-                        <img src={deadhead} alt="syf" style={{height: 75}}/>
+                        <img src={gamecock} alt="cocky" style={{height: 70}}/>
+                        <img src={header} alt="head" style={{height: 70}}/>
+                        <img src={deadhead} alt="syf" style={{height: 70}}/>
                     
                         <Typography textAlign="left">
                             I am currently a Software Engineer, Consultant at Booz Allen Hamilton. 
