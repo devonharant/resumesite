@@ -16,7 +16,7 @@ export default function AboutMe() {
                     <Typography style={{fontWeight: 'bold'}}>About Me</Typography>
                 </AccordionSummary>
                 <AccordionDetails style={{width: '95%'}}>
-                    <Box display="flex" flexDirection="row" justifyContent="space-between" flexWrap='wrap'>
+                    <Box display="flex" flexDirection="row" justifyContent="space-evenly" flexWrap='wrap'>
                         <img src={gamecock} alt="cocky" style={{height: 70}}/>
                         <img src={header} alt="head" style={{height: 70}}/>
                         <img src={deadhead} alt="syf" style={{height: 70}}/>
