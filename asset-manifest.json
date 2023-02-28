@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/resumesite/static/css/main.073c9b0a.css",
-    "main.js": "/resumesite/static/js/main.6bcda923.js",
+    "main.js": "/resumesite/static/js/main.866f418f.js",
     "static/js/787.e5c930d9.chunk.js": "/resumesite/static/js/787.e5c930d9.chunk.js",
-    "static/media/syf.png": "/resumesite/static/media/syf.867ef21d290d87c2a3ec.png",
     "static/media/usc.png": "/resumesite/static/media/usc.0b7fadcf52caf53b200e.png",
-    "static/media/header.jpeg": "/resumesite/static/media/header.9fef04678cc645f586b7.jpeg",
+    "static/media/ega.png": "/resumesite/static/media/ega.6562971dd30d98c096a5.png",
     "static/media/mepicture.jpeg": "/resumesite/static/media/mepicture.714fe7be3aa95b0a8db2.jpeg",
+    "static/media/grateful-dead-steal-your-face.jpeg": "/resumesite/static/media/grateful-dead-steal-your-face.433913e7660db861f57b.jpeg",
     "index.html": "/resumesite/index.html",
     "main.073c9b0a.css.map": "/resumesite/static/css/main.073c9b0a.css.map",
-    "main.6bcda923.js.map": "/resumesite/static/js/main.6bcda923.js.map",
+    "main.866f418f.js.map": "/resumesite/static/js/main.866f418f.js.map",
     "787.e5c930d9.chunk.js.map": "/resumesite/static/js/787.e5c930d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.6bcda923.js"
+    "static/js/main.866f418f.js"
   ]
 }
