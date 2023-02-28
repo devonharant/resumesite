@@ -9,11 +9,16 @@ export default function BoxColor(){
         setColor(newColor);
     }
 
+    const reset = () =>{
+        setColor('000000');
+    }
+
     return (
         <>
             <Box display="flex" flexDirection="row">
                 <Button onClick={changeColor}>click me</Button>
                 <Box bgcolor={`#${color}`} style={{maxWidth: '50px', maxHeight: '50px'}}>hello:)</Box>
+                <Button onClick={reset}>Reset</Button>
             </Box>
         </>
     )

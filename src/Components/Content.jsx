@@ -10,11 +10,11 @@ export default function Content() {
     return(
     <>
         <Header/>
-        <Box display="flex" flexDirection="row" style={{paddingLeft: '10px'}}>
-            <Box display="flex">
-                <img src={picture} alt="img" style={{height: 300, width: 300}}/>
+        <Box display="flex" flexDirection="row" flexWrap="wrap">
+            <Box display="flex" flexWrap="inherit">
+                <img src={picture} alt="img" style={{paddingLeft: '10px', maxHeight: '300px'}}/>
             </Box>
-            <Box display="flex" flexDirection="column" style={{paddingLeft: '10px', maxWidth: '80%'}}>
+            <Box display="flex" flexDirection="column" style={{paddingLeft: '10px', width: '80%'}} flexWrap="inherit">
                 <AboutMe/>
                 <Experience/>
                 <Projects/>

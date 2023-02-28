@@ -18,9 +18,9 @@ export default function ButtonIncrement(){
     return (
         <>
             <Box display="flex" flexDirection="row">
-                <Button onClick={countDown}>Count Down</Button>   
+                <Button onClick={countDown} style={{color: 'red'}}>Count Down</Button>   
                 <Typography style={{paddingTop:'6px'}}>{count}</Typography>
-                <Button onClick={countUp}>Count Up</Button>
+                <Button onClick={countUp} style={{color: 'green'}}>Count Up</Button>
                 <Button onClick={reset}>Reset</Button>
             </Box>
         </>

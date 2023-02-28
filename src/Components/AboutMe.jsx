@@ -1,22 +1,22 @@
 import React from "react";
-import header from '../header.jpeg';
+import header from '../ega.png';
 import gamecock from '../usc.png';
-import deadhead from '../syf.png';
+import deadhead from '../grateful-dead-steal-your-face.jpeg';
 import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function AboutMe() {
     return (
         <>
-            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)"}}>
+            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)", width: '95%'}}>
                 <AccordionSummary 
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header">
                     <Typography style={{fontWeight: 'bold'}}>About Me</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
-                    <Box display="flex" flexDirection="row" justifyContent="space-between" style={{paddingBottom: '20px'}}>
+                <AccordionDetails style={{width: '95%'}}>
+                    <Box display="flex" flexDirection="row" justifyContent="space-between" >
                         <img src={gamecock} alt="cocky" style={{height: 100}}/>
                         <img src={header} alt="head" style={{height: 100}}/>
                         <img src={deadhead} alt="syf" style={{height: 100}}/>

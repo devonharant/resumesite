@@ -7,7 +7,7 @@ import BoxColor from "./BoxColor";
 export default function Funnies(){
     return (
         <>
-            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)"}}>
+            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)", width: '95%'}}>
                 <AccordionSummary 
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
@@ -15,10 +15,7 @@ export default function Funnies(){
                     <Typography style={{fontWeight: 'bold'}}>Funnies</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography textAlign="left" style={{paddingBottom: '5px'}}>
-                    Funny time
-                    </Typography>
-                    <Box display="flex" flexDirection="row" justifyContent="space-between">
+                    <Box display="flex" flexDirection="row" justifyContent="space-between" flexWrap="wrap">
                         <ButtonIncrement/>
                         <BoxColor/>
                         <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>for the love of all that is good, don't click me</a>

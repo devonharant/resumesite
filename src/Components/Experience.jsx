@@ -5,14 +5,14 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function Experience() {
     return (
         <>
-            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)"}}>
+            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)", width: '95%'}}>
                 <AccordionSummary 
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header">
                     <Typography style={{fontWeight: 'bold'}}>Experience</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails >
                     <Typography textAlign="left">I have experience from the following occupations: </Typography>
                     <List >
                     <ListItem nested>
