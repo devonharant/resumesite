@@ -1,48 +1,96 @@
 import React from "react";
-import { Accordion, AccordionDetails, AccordionSummary, Typography, List, ListItem, ListSubheader, } from "@mui/material";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+  List,
+  ListItem,
+  ListSubheader,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export default function Projects(){
-    const projectURL = 'https://github.com/SCCapstone/Koger';
-    const mart380URL = 'https://github.com/devonharant/MART380FinalProject';
+export default function Projects() {
+  const projectURL = "https://github.com/SCCapstone/Koger";
+  const mart380URL = "https://github.com/devonharant/MART380FinalProject";
 
-    return(
-        <>
-            <Accordion style={{border: "2px solid rgba(0,0,0,0.1)", width: '95%'}}>
-                    <AccordionSummary 
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header">
-                        <Typography style={{fontWeight: 'bold'}}>Projects</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails >
-                    <Typography textAlign="left">Projects I have worked on: </Typography>
-                    <List >
-                        <ListItem nested>
-                            <List>
-                                <ListSubheader style={{fontSize: 18}}>Capstone Project - Koger Center for the Arts Mobile App</ListSubheader> 
-                                <ListItem>- Using JavaScript, TypeScript, Ionic, and Angular, a team and I built a mobile seat finding app 
-                                    for a local theater venue on the University of South Carolina's campus that guides users to their seat when they give the app their ticket/seating information. 
-                                </ListItem>
-                                <ListItem>
-                                    -<a href={projectURL}> Project link</a>
-                                </ListItem>
-                            </List>
-                        </ListItem>
-                        <ListItem nested>
-                            <List>
-                                <ListSubheader style={{fontSize: 18}}>MART380 Final Project</ListSubheader>
-                                <ListItem>- In the Spring of 2021, I took a class called 'The New Media Art' which tasked us with a semester-long project to make a 2D scrolling video game from scratch. 
-                                    This project was made using Unity 2019.4.18f1 as well as the free DOTween assets/plugins downloaded from the Unity In-Engine store. 
-                                </ListItem>
-                                <ListItem>
-                                    -<a href={mart380URL}> Project link</a>
-                                </ListItem>
-                            </List>
-                        </ListItem>
-                    </List>
-                    </AccordionDetails>
-            </Accordion>
-        </>
-    )
+  return (
+    <Accordion className="custom-accordion">
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon className="accordion-icon" />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+        <Typography variant="h6" className="accordion-title">
+          Projects
+        </Typography>
+      </AccordionSummary>
+
+      <AccordionDetails className="accordion-details">
+        <List>
+          <ListItem
+            sx={{ flexDirection: "column", alignItems: "flex-start", mb: 2 }}
+          >
+            <Typography
+              variant="subtitle1"
+              sx={{ color: "#0F7A07", fontWeight: "bold" }}
+            >
+              Personal Project - Breaded (WIP)
+            </Typography>
+            <Typography variant="body2" sx={{ mt: 1 }}>
+              Using ReactNative, ExpoGo, Docker, node, and express, I built a
+              mobile app that leverages a LLM hosted on a personal Raspberry Pi
+              that provides budgeting insights and financial guidance in a chat
+              window. In the future, this app will contain course work and goal
+              tracking for users' financial goals.
+            </Typography>
+          </ListItem>
+
+          <ListItem
+            sx={{ flexDirection: "column", alignItems: "flex-start", mb: 2 }}
+          >
+            <Typography
+              variant="subtitle1"
+              sx={{ color: "#0F7A07", fontWeight: "bold" }}
+            >
+              Capstone Project - Koger Center for the Arts Mobile App
+            </Typography>
+            <Typography variant="body2" sx={{ mt: 1 }}>
+              Using JavaScript, TypeScript, Ionic, and Angular, a team and I
+              built a mobile seat finding app for a local theater venue.
+            </Typography>
+            <a
+              href={projectURL}
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#0F7A07", marginTop: "8px" }}
+            >
+              View on GitHub
+            </a>
+          </ListItem>
+
+          <ListItem sx={{ flexDirection: "column", alignItems: "flex-start" }}>
+            <Typography
+              variant="subtitle1"
+              sx={{ color: "#0F7A07", fontWeight: "bold" }}
+            >
+              MART380 Final Project
+            </Typography>
+            <Typography variant="body2" sx={{ mt: 1 }}>
+              Using Unity and C#, I built a video game from scratch in a class
+              called 'The New Media Art' in 2021.
+            </Typography>
+            <a
+              href={mart380URL}
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#0F7A07", marginTop: "8px" }}
+            >
+              View on GitHub
+            </a>
+          </ListItem>
+        </List>
+      </AccordionDetails>
+    </Accordion>
+  );
 }
