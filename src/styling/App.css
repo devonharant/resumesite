@@ -48,7 +48,6 @@
   border: 1px solid #A2D9A0 !important;
 }
 
-/* Removes the weird thin line MUI adds between accordions */
 .custom-accordion::before {
   display: none !important;
 }
@@ -61,7 +60,6 @@
   background-color: rgba(15, 122, 7, 0.05) !important;
 }
 
-/* Targets the text inside the summary */
 .accordion-title {
   color: #0F7A07;
   font-weight: bold !important;
@@ -71,12 +69,17 @@
   color: #0F7A07 !important;
 }
 
+/* REFINED SCROLL CONTAINER
+   Apply this class to your MUI <List> in the Experience component 
+*/
 .accordion-details {
   background-color: #ffffff;
   color: #333333;
-  max-height: 400px; 
-  overflow-y: auto;
+  max-height: 400px !important; 
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
   border-top: 1px solid #f0f0f0;
+  display: block !important; /* Forces block layout for proper scrolling */
 }
 
 .accordion-details::-webkit-scrollbar {
