@@ -35,13 +35,11 @@ export default function BoxColor(){
     }
 
     return (
-        <>
             <Box display="flex" flexDirection="row">
                 <Button onClick={changeColor}>click me</Button>
                 <Box bgcolor={`#${color}`} style={{maxWidth: '50px', maxHeight: '50px', color: 'black'}}>hello:)</Box>
                 <Button onClick={() => setIsAutoPlaying(!isAutoPlaying)}>rainbow-ish?</Button>
                 <Button onClick={reset}>Reset</Button>
             </Box>
-        </>
     )
 }
