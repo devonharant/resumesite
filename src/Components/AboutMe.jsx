@@ -59,7 +59,7 @@ const details = () => {
           I am currently a Full Stack Software Engineer at Booz Allen Hamilton.
           I graduated from the University of South Carolina with a BS in
           Computer Science. As a software engineer at Booz Allen Hamilton, I
-          utilize JavaScript, SQL, GraphQL, and various related frameworks and
+          utilize JavaScript, React, SQL, GraphQL, and various related frameworks and
           languages in a refactor effort of the modernization of an old J2EE
           application. Some interesting facts about me:
           <List
