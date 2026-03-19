@@ -1,0 +1,45 @@
+name: Deploy Vite Resume Site
+
+on:
+  push:
+    branches: ["main"] # Trigger on push to main
+  workflow_dispatch:    # Allows you to run it manually from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    # THE SECURITY LOCK: Only runs if the 'actor' is you
+    if: github.actor == 'devonharant'
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci # Use 'ci' for faster, cleaner builds in automation
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # Vite builds into the /dist folder
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
