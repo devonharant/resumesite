@@ -1,7 +1,7 @@
 import picture from "../images/me.jpg";
-import AboutMe from "../components/AboutMe";
-import Experience from "../components/Experience";
-import Projects from "../components/Projects";
+import AboutMe from "./AboutMe";
+import Experience from "./Experience";
+import Projects from "./Projects";
 import Funnies from "./Funnies";
 import { Box, Typography, Container } from "@mui/material";
 
