@@ -18,7 +18,7 @@ export default function Content() {
           }}
           variant="h3"
         >
-          Devon Harant TEST
+          Devon Harant
         </Typography>
 
         <Box
