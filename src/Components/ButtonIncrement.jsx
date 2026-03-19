@@ -41,7 +41,6 @@ export default function ButtonIncrement() {
     formState: { errors },
     control,
     reset: resetForm,
-    setError,
     watch,
   } = useForm({
     resolver: yupResolver(schema),
