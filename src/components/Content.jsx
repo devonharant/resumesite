@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Funnies from "./Funnies";
+import ContactInfo from "./ContactInfo";
 import { Box, Typography, Container } from "@mui/material";
 
 export default function Content() {
@@ -57,6 +58,7 @@ export default function Content() {
             <Experience />
             <Projects />
             <Funnies />
+            <ContactInfo />
           </Box>
         </Box>
       </Box>

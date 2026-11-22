@@ -60,7 +60,7 @@ const details = () => {
           I graduated from the University of South Carolina with a BS in
           Computer Science. As a software engineer at Booz Allen Hamilton, I
           utilize JavaScript, React, SQL, GraphQL, and various related frameworks and
-          languages in a refactor effort of the modernization of an old J2EE
+          languages in a refactor effort of the modernization and maintenance of an outdated J2EE
           application. Some interesting facts about me:
           <List
             style={{ flexDirection: "column", height: "100%", width: "100%" }}
